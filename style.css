@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.d-flex {
+  display: flex;
+}
+
+.wrapper {
+  background-image: linear-gradient(
+      rgba(141, 138, 138, 0.5) 100%,
+      rgba(88, 87, 87, 0.5) 100%
+    ),
+    url("https://static.wixstatic.com/media/12af21_8292f31b1f1e43cfa74b96b7a785a537~mv2.jpg/v1/fill/w_1349,h_580,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/12af21_8292f31b1f1e43cfa74b96b7a785a537~mv2.jpg");
+
+  height: 580px;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+.nav-image {
+  border-radius: 2px;
+  margin-right: 25px;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 45px;
+  color: black;
+  font-weight: bolder;
+}
+
+.title_2nd {
+  color: aqua;
+}
+.menu-list {
+  display: flex;
+  background-color: #b9abab;
+  color: white;
+  border-radius: 5px;
+  margin-left: auto;
+}
+.menu-list > li {
+  padding: 5px 40px;
+  font-weight: 700;
+  /* border: 1px solid rgb(146, 145, 145); */
+}
+.menu-list > li:hover {
+  background-color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.client-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.wrapper_2nd {
+  background-image: url("https://static.wixstatic.com/media/11062b_5c6719f355894992a4ffad6a33a9749b~mv2.jpg/v1/fill/w_1349,h_881,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_5c6719f355894992a4ffad6a33a9749b~mv2.jpg");
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin: 0 80px;
+  padding: 20px 40px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 4px 10px;
+  margin: 10px;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+}
+
+.input:focus {
+  border-bottom: 1px solid grey;
+}
+
+.textArea{
+   height: 70px;
+   width: 100%;
+   border: none;
+   border-bottom: 1px solid grey;
+   outline: none;
+   padding: 4px 10px;
+}
+.button{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
