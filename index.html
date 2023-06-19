@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Techvision</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="global.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
@@ -22,15 +28,22 @@
         </div>
 
         <ul class="menu-list">
-          <li><a href="">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./services.html">Services</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Memories</a></li>
+          <div class="subnav">
+            <li><a href="./about.html">About</a></li>
+            <div class="subnav-content">
+              <a href="#company">Company</a><br />
+              <a href="#team">Team</a><br />
+              <a href="./gallery.html">Gallery</a><br />
+            </div>
+          </div>
           <li><a href="#">Contact</a></li>
+          <li><a href="#careers">Careers</a></li>
         </ul>
       </nav>
 
-      <h1 style="margin-top: 100px; padding: 0 0 0 30px">Our Clients</h1>
+      <h1 style="margin-top: 150px; padding: 0 0 0 30px">Our Clients</h1>
       <div class="client-list">
         <!-- start -->
 
@@ -97,8 +110,8 @@
 
     <div class="wrapper_2nd">
       <div class="section">
-        <div class="card">
-          <h1 style="margin-bottom:20px">GET IN TOUCH</h1>
+        <div class="part">
+          <h1 style="margin-bottom: 20px">GET IN TOUCH</h1>
           <p>
             Dom Inno's Properties | House # 18 | Road # 06 | Gulshan-1 | Dhaka
             1212 | Bangladesh
@@ -117,20 +130,24 @@
             <input type="text" placeholder="Address" class="input" />
           </div>
           <input type="text" placeholder="Subject" class="input" />
-          <input type="text" placeholder="Type your message here..." class="textArea" />
+          <input
+            type="text"
+            placeholder="Type your message here..."
+            class="textArea"
+          />
           <button class="button">Submit</button>
         </div>
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <!-- <div class="card" style="width: 18rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-      </div>
+      </div> -->
     <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -152,8 +169,11 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div> -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
-    
   </body>
 </html>

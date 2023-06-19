@@ -1,0 +1,9 @@
+.gallery-section{
+  padding: 0 40px;
+ 
+  
+}
+
+.gallery-section > img{
+   height: auto;
+}

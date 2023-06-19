@@ -1,0 +1,24 @@
+.divider {
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.team {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+
+.team > img {
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+}
+
+.client-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  align-items: center;
+  padding: 0 30px;
+}
