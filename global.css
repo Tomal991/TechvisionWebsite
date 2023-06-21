@@ -16,6 +16,7 @@ body {
 
 ul {
     list-style: none;
+    padding-left: 0px !important;
   }
   a {
     text-decoration: none !important;
@@ -59,8 +60,11 @@ ul {
   .menu-list > li {
     padding: 5px 40px;
     font-weight: 700;
-   border-left: 1px solid rgb(146, 145, 145); 
+   /* border-left: 1px solid rgb(146, 145, 145);  */
    border-right: 1px solid rgb(146, 145, 145); 
+  }
+  .menu-list > li:last-child{
+    border-right: none;
   }
   .menu-list > li:hover {
     background-color: white;
@@ -70,7 +74,7 @@ ul {
   .menu-list > div > li {
     padding: 5px 40px;
     font-weight: 700;
-    /* border: 1px solid rgb(146, 145, 145); */
+    border-right: 1px solid rgb(146, 145, 145); 
   }
   .menu-list > div > li:hover {
     background-color: white;
@@ -80,8 +84,8 @@ ul {
 
   
 .subnav {
-  /* float: left;
-  overflow: hidden; */
+  float: left;
+  overflow: hidden;
 }
 
 .subnav .subnavbtn {
@@ -93,7 +97,9 @@ ul {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  border-right: 1px solid rgb(146, 145, 145) !important; 
 }
+
 
 .navbar a:hover, .subnav:hover .subnavbtn {
   background-color: red;
@@ -121,6 +127,7 @@ ul {
   font-weight: 700;
   text-decoration: none;
   text-align: center;
+  border-right: ;
 }
 
 .subnav-content > a:hover {
