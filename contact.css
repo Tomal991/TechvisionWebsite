@@ -1,13 +1,14 @@
 .wrapper_2nd {
   background-image: url("https://static.wixstatic.com/media/11062b_5c6719f355894992a4ffad6a33a9749b~mv2.jpg/v1/fill/w_1349,h_881,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_5c6719f355894992a4ffad6a33a9749b~mv2.jpg");
   margin-top: 120px;
+  height: 100vh;
 }
 .section {
   display: flex;
   justify-content: space-between;
   background-color: white;
   margin: 0 80px;
-  padding: 20px 40px;
+  padding: 50px 40px;
 }
 .part {
   display: flex;

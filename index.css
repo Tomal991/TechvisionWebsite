@@ -25,7 +25,7 @@
   justify-content: space-between;
   background-color: white;
   margin: 0 80px;
-  padding: 20px 40px;
+  padding: 50px 40px;
 }
 .part {
   display: flex;
@@ -76,6 +76,7 @@
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
   display: flex;
+  align-items: center;
 }
 
 /* medium and up screens */
@@ -107,9 +108,20 @@
   background-color: #2eaee0;
 }
 
-/* .carousel-item img {
-  min-width: 200px;
-  min-height: 150px;
-  max-height: 150px ;
-  max-width: 200px;
-} */
+.carousel-item img {
+  min-width: 150px;
+  min-height: 100px;
+  max-height: 100px ;
+  max-width: 120px;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.subtitle{
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
