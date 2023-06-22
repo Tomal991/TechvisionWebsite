@@ -127,7 +127,7 @@ ul {
   font-weight: 700;
   text-decoration: none;
   text-align: center;
-  border-right: ;
+  /* border-right: ; */
 }
 
 .subnav-content > a:hover {
