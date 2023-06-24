@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   scroll-behavior: smooth;
 }
 .d-flex {
@@ -140,4 +140,29 @@ ul {
 
 .subnav:hover .subnav-content {
   display: block;
+}
+
+.custom-border-bottom p:before,
+.custom-border-bottom p:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  width: 50px;
+  border-bottom: 3px solid black;
+  border-radius: 5px;
+  content: "";
+}
+.custom-border-bottom2 p:before,
+.custom-border-bottom2 p:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 0 0 170px;
+  display: block;
+  width: 50px;
+  border-bottom: 3px solid black;
+  border-radius: 5px;
+  content: "";
 }

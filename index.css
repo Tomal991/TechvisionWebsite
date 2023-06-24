@@ -122,6 +122,18 @@
     transform: translateX(0);
   }
 }
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .subtitle{
   animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.note{
+  animation: 1s ease-out 0s 1 slideInFromTop;
+
 }

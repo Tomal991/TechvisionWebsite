@@ -4,7 +4,8 @@
     justify-content: center;
     grid-template-columns: auto auto;
     gap: 50px;
-    margin-top: 30px;
+    margin-top: 60px;
+  
   }
   
   .team > div > img {
