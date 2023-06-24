@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-    crossorigin="anonymous"
-  />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="./contact.css" />
     <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script type="module" src="./contact.js"></script>
   </head>
   <body>
@@ -50,21 +57,40 @@
             GET IN TOUCH
           </h1>
           <p>
-            Dom Inno's Properties | House # 18 | Road # 06 | Gulshan-1 | Dhaka
+            <i class="fa-solid fa-location-dot me-2"></i> Dom Inno's Properties | House # 18 | Road # 06 | Gulshan-1 | Dhaka
             1212 | Bangladesh
           </p>
-          <a href="mailto:cet@bdtechvisionco.com">cet@bdtechvisionco.com</a>
-          <a href="tel:01711820258">01711820258</a>
+          <button class="btn">
+            <i class="fa-solid fa-envelope me-2"></i
+            ><a href="mailto:cet@bdtechvisionco.com">cet@bdtechvisionco.com</a>
+          </button>
+          <button class="btn">
+            <i class="fa-solid fa-phone me-2"></i>
+            <a href="tel:01675905111">01675905111</a>
+          </button>
+
+          <button
+            class="bg-white px-2 py-1 rounded border-primary mt-4"
+            style="align-self: flex-start"
+          >
+            <i class="fa-brands fa-facebook me-2" style="color: blue"></i
+            ><a href="https://www.facebook.com/techvisionbd">Follow Page</a>
+          </button>
         </div>
 
         <div class="form">
           <div class="d-flex">
-            <input type="text" placeholder="Name" class="input" />
-            <input type="text" placeholder="Email" id="email" class="input" />
+            <input type="text" placeholder="Name" class="input me-2" />
+            <input
+              type="text"
+              placeholder="Email"
+              id="email"
+              class="input ms-2"
+            />
           </div>
           <div class="d-flex">
-            <input type="text" placeholder="Phone" class="input" />
-            <input type="text" placeholder="Address" class="input" />
+            <input type="text" placeholder="Phone" class="input me-2" />
+            <input type="text" placeholder="Address" class="input ms-2" />
           </div>
           <input type="text" placeholder="Subject" id="subject" class="input" />
           <input
@@ -73,7 +99,9 @@
             placeholder="Type your message here..."
             class="textArea"
           />
-          <button class="button" type="submit" onclick="sendEmail()">Submit</button>
+          <button class="button" type="submit" onclick="sendEmail()">
+            Submit
+          </button>
         </div>
 
         <!-- <form id="contact-form">
@@ -90,24 +118,25 @@
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.158128475917!2d90.41059587419049!3d23.77738278774204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7423dd2885b%3A0x1f4f951192216bec!2sTechvision%20Limited!5e0!3m2!1sen!2sbd!4v1687597841891!5m2!1sen!2sbd"
         height="300"
-        style="border: 0; width: 100%; padding: 0 80px 30px 80px;"
+        style="border: 0; width: 100%; padding: 0 80px 30px 80px"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
-
     </div>
-    <h6 style="text-align: center;" class="py-3 px-5">&copy <span style="color:#2EAEE0">Techvision</span>. All Rights Reserved.</h6>
+    <h6 style="text-align: center" class="py-3 px-5">
+      &copy <span style="color: #2eaee0">Techvision</span>. All Rights Reserved.
+    </h6>
 
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"
-  ></script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
     <script src="./contact.js"></script>
   </body>
 </html>

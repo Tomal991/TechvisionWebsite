@@ -71,3 +71,11 @@ transform: translateX(0);
  display: flex;
  justify-content: center;
 } */
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 60px;
+
+}
