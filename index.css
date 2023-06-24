@@ -130,10 +130,20 @@
     transform: translateY(0);
   }
 }
-.subtitle{
+/* @keyframes slideInFromRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
+.animateFromLeft{
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
-.note{
+.animateFromTop{
   animation: 1s ease-out 0s 1 slideInFromTop;
-
 }
+/* .animateFromRight{
+  animation: 1s ease-out 0s 1 slideInFromRight;
+} */

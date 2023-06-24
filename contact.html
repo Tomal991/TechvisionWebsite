@@ -11,6 +11,7 @@
     crossorigin="anonymous"
   />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="./contact.css" />
     <link rel="stylesheet" href="./global.css" />
     <script type="module" src="./contact.js"></script>
@@ -59,19 +60,20 @@
         <div class="form">
           <div class="d-flex">
             <input type="text" placeholder="Name" class="input" />
-            <input type="text" placeholder="Email" class="input" />
+            <input type="text" placeholder="Email" id="email" class="input" />
           </div>
           <div class="d-flex">
             <input type="text" placeholder="Phone" class="input" />
             <input type="text" placeholder="Address" class="input" />
           </div>
-          <input type="text" placeholder="Subject" class="input" />
+          <input type="text" placeholder="Subject" id="subject" class="input" />
           <input
             type="text"
+            id="message"
             placeholder="Type your message here..."
             class="textArea"
           />
-          <button class="button">Submit</button>
+          <button class="button" type="submit" onclick="sendEmail()">Submit</button>
         </div>
 
         <!-- <form id="contact-form">

@@ -17,30 +17,18 @@ window.onload = function() {
             });
     });
 }
-// Initialize and add the map
-let map;
 
-async function initMap() {
-  // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-  // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "DEMO_MAP_ID",
-  });
-
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerElement({
-    map: map,
-    position: position,
-    title: "Uluru",
-  });
+function sendEmail(){
+  Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "intesarulhaquey4@gmail.com",
+      Password : "82B1ED0AFEE3C043527E2A10EC43E34A140C",
+      To : 'intesarul15-2170@diu.edu.bd',
+      From : document.getElementById('email').value,
+      Subject : document.getElementById('subject').value,
+      Body : document.getElementById('message').value
+  }).then(
+    message => alert(message)
+  );
 }
-
-initMap();
