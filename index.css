@@ -23,7 +23,7 @@
 .section {
   display: flex;
   /* justify-content: space-between; */
-  gap:60px;
+  gap: 60px;
   background-color: white;
   margin: 0 80px;
   padding: 50px 40px;
@@ -57,7 +57,7 @@
   padding: 4px 10px;
 }
 .button {
-  background-color: #2EAEE0;
+  background-color: #2eaee0;
   color: white;
   width: 100%;
   padding: 10px 30px;
@@ -91,7 +91,6 @@
   .carousel-inner .carousel-item-next {
     /* transform: translateX(25%); */
     transition: all 1.3s ease-in-out;
-
   }
 
   .carousel-inner .carousel-item-start.active,
@@ -118,10 +117,12 @@
 }
 
 .carousel-item img {
-  min-width: 150px;
-  min-height: 100px;
-  max-height: 100px ;
-  max-width: 120px;
+  width: 150px;
+  height: 120px;
+  /* min-width: 150px;
+min-height: 100px;
+max-height: 100px ;
+max-width: 120px; */
 }
 
 /* .animateFromRight{
@@ -133,6 +134,4 @@
   width: 100%;
   overflow: hidden;
   padding: 0 80px;
-
 }
-
