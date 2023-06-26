@@ -6,6 +6,8 @@
     <title>Techvision</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="global.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,6 +21,8 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <script type="module" src="./index.js"></script>
+
   </head>
 
   <body>
@@ -288,20 +292,23 @@
 
         <div class="form reveal fade-left">
           <div class="d-flex">
-            <input type="text" placeholder="Name" class="input me-2" />
-            <input type="text" placeholder="Email" class="input ms-2" />
+            <input type="text" placeholder="Name" id="name" class="input me-2" />
+            <input type="text" placeholder="Email" id="email" class="input ms-2" />
           </div>
           <div class="d-flex">
-            <input type="text" placeholder="Phone" class="input me-2" />
-            <input type="text" placeholder="Address" class="input ms-2" />
+            <input type="text" placeholder="Phone" id="phone" class="input me-2" />
+            <input type="text" placeholder="Address" id="address" class="input ms-2" />
           </div>
-          <input type="text" placeholder="Subject" class="input" />
+          <input type="text" placeholder="Subject" id="subject" class="input" />
           <input
             type="text"
+            id="message"
             placeholder="Type your message here..."
             class="textArea"
           />
-          <button class="button">Submit</button>
+          <button class="button" type="submit" onclick="sendEmail()">
+            Submit
+          </button>
         </div>
       </div>
       <iframe
